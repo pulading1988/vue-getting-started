@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 3</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
+</head>
+<body>
+	<!-- 这是我们的 View -->
+	<div id="app">
+		<input type="radio" id="one" value="One" v-model="picked">
+		<label for="one">One</label>
+		<br>
+		<input type="radio" id="two" value="Two" v-model="picked">
+		<label for="two">Two</label>
+		<br>
+		<span>Picked: {{ picked }}</span>
+	</div>
+	
+	<script>
+	var exampleVM = new Vue({
+		el: '#app',
+		data: {
+			picked: 'Two'
+		}
+	})
+	</script>
+</body>
+</html>

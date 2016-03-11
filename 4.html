@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 3</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
+</head>
+<body>
+	<!-- 这是我们的 View -->
+	<div id="app">
+		<select v-model="selected" multiple>
+		  <option selected>A</option>
+		  <option>B</option>
+		  <option>C</option>
+		</select>
+		<br>
+		<span>Selected: {{ selected | json }}</span>
+	</div>
+	
+	<script>
+	var exampleVM = new Vue({
+		el: '#app',
+		data: {
+			selected: []
+		}
+	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 1</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
+</head>
+<body>
+	<!-- 这是我们的 View -->
+	<div id="app">
+		Hello {{ name }}!
+	</div>
+	
+	<script>
+	// 这是我们的 Model
+	var exampleData = {
+		name: '<p>Vue.js<p>'
+	}
+
+	// 创建一个 Vue 实例或 "ViewModel"
+	// 它连接 View 与 Model
+	var exampleVM = new Vue({
+		el: '#app',
+		data: exampleData
+	})
+
+	</script>
+</body>
+</html>
